@@ -12,9 +12,11 @@
 </head>
 <body>
     <div id="app">
-        <div class="mails" v-for="(item) in mailList">
-            <h5>{{item}}</h5>
-        </div>
+        <template v-if="mailList.length === 10">
+            <div class="mails" v-for="(item) in mailList">
+                <h5>{{item}}</h5>
+            </div>
+        </template>
     </div>
     <script src="main.js"></script>
 </body>
