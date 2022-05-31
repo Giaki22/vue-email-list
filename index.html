@@ -11,7 +11,11 @@
     <title>Vue Email List</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <div class="mails" v-for="(item) in mailList">
+            <h5>{{item}}</h5>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
